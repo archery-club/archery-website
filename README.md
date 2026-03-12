@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 识箭 — 官网
 
-## Getting Started
+识箭 App 的官方落地页，基于 Next.js 构建。
 
-First, run the development server:
+## 技术栈
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **框架**：Next.js 15 (App Router)
+- **样式**：Tailwind CSS
+- **动画**：Framer Motion
+- **字体**：Noto Sans SC
+
+## 项目结构
+
+```
+app/              # Next.js App Router 页面与布局
+components/       # 页面各区块组件
+  Navbar.tsx      # 顶部导航
+  Hero.tsx        # 首屏 Banner
+  FeatureSection.tsx  # 功能介绍
+  StatsSection.tsx    # 数据亮点
+  DownloadSection.tsx # 下载区块（iOS / Android）
+  Footer.tsx      # 页脚
+public/
+  assets/         # 图片、图标、APK 安装包
+  screenshots/    # App 截图
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 本地开发
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm install
+pnpm dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+访问 [http://localhost:3000](http://localhost:3000) 预览。
 
-## Learn More
+## 构建部署
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+pnpm build
+pnpm start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 下载链接
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- iOS：[App Store](https://apps.apple.com/us/app/%E8%AF%86%E7%AE%AD/id6749833556)
+- Android：`/public/assets/识箭.apk`
