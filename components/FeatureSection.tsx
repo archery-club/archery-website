@@ -18,7 +18,7 @@ const features: Feature[] = [
     id: "ai-recognition",
     title: "拍一张，全识别",
     description:
-      "基于深度学习的 YOLO 目标检测模型，自动识别靶面上的每一支箭，实时计算环数与落点坐标。",
+      "基于自研模型与算法，实时识别靶面上的每一支箭，实时计算环数与落点坐标。",
     bullets: ["支持多种靶纸规格", "毫秒级识别速度", "离线可用，无需联网"],
     screenshots: ["/screenshots/01-ai-recognition.jpg"],
     dark: false,
