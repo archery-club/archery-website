@@ -1,0 +1,25 @@
+// All images are crops of owner-supplied artwork or film frames. See design/ASSET-PROVENANCE.md.
+export const productMedia = {
+  "hero-camera-matched": { src: "/media/hero-camera-matched.webp", width: 466, height: 687 },
+  "hero-plot-matched": { src: "/media/hero-plot-matched.webp", width: 566, height: 1185 },
+  "hero-phone": { src: "/media/hero-phone.webp", width: 1000, height: 1493 },
+  "film-plot-phone": { src: "/media/film-plot-phone.webp", width: 820, height: 1600 },
+  "film-shot-review": { src: "/media/film-shot-review.webp", width: 1030, height: 1290 },
+  "film-bias": { src: "/media/film-bias.webp", width: 1020, height: 940 },
+  "film-bias-trend": { src: "/media/film-bias-trend.webp", width: 1020, height: 340 },
+  "film-grouping": { src: "/media/film-grouping.webp", width: 1035, height: 910 },
+  "film-trends": { src: "/media/film-trends.webp", width: 1030, height: 785 },
+  "film-distribution": { src: "/media/film-distribution.webp", width: 1030, height: 450 },
+  "film-gear-library": { src: "/media/film-gear-library.webp", width: 965, height: 1560 },
+  "film-arrow-tags": { src: "/media/film-arrow-tags.webp", width: 990, height: 800 },
+  "film-shot-order": { src: "/media/film-shot-order.webp", width: 790, height: 920 },
+  "film-action-video": { src: "/media/film-action-video.webp", width: 810, height: 1080 },
+  "film-compare": { src: "/media/film-compare.webp", width: 930, height: 1230 },
+  "film-compare-detail": { src: "/media/film-compare-detail.webp", width: 1000, height: 1010 },
+  "film-analysis-phone": { src: "/media/film-analysis-phone.webp", width: 956, height: 1600 },
+  "film-sight": { src: "/media/film-sight.webp", width: 890, height: 1150 },
+  "component-specs": { src: "/media/component-specs.webp", width: 600, height: 786 },
+  "store-end-scores": { src: "/media/store-end-scores.webp", width: 605, height: 293 },
+  "store-share-report": { src: "/media/store-share-report.webp", width: 754, height: 1203 },
+} as const;
+export type ProductMediaName = keyof typeof productMedia;
