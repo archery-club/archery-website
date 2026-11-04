@@ -56,6 +56,8 @@ The website highlights the owner-supplied 95%+ detection accuracy and proprietar
 
 The homepage includes a staggered avatar/name/comment wall inspired by the supplied Supabase reference, without profile links or social platform badges. On mobile, swipe or use the previous/next controls. `lib/community.ts` contains clearly labeled illustrative content for the local design preview. Replace it with approved real feedback before presenting the section as customer testimony; `communityIsPreview` controls the visible notice. Original inline vector avatars make no external image requests.
 
-## Current hero and motion
+## Current hero and video
 
-The hero pairs two unretouched crops from the same 23-second launch-film frame: real camera detection and its corresponding nine-arrow / 80-point plot on the original phone mock. Images enter in sequence and float subtly; the flow indicator sits outside the app UI. Pause/Play motion controls both ongoing effects, movement suspends offscreen, and reduced-motion preferences disable it. Existing feature transitions and scroll reveals remain.
+The hero plays an unaltered 6.8-second recognition excerpt (9.2–16.0 seconds) from the supplied English film, muted and looped at 720 × 1280. The complete original frame is retained. The right-hand nine-arrow / 80-point phone mock remains unchanged. Both images stay in place; the old floating animation has been removed.
+
+The video pauses offscreen and in background tabs. Pause/Play controls reflect actual playback. Reduced-motion preferences prevent automatic playback while still allowing the visitor to press Play. A frame from the excerpt is used as its poster. Existing feature transitions and scroll reveals remain.

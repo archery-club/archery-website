@@ -62,3 +62,7 @@ Unused historical assets remain for archived designs. `film-analysis-phone.webp`
 ## Selected palette A / matched hero
 
 `hero-camera-matched.webp` and `hero-plot-matched.webp` are unretouched crops from the SAME 23-second frame of the supplied English film: camera panel (40,668)-(506,1355), complete phone (494,425)-(1060,1610). The nine-arrow, 80-point end matches across the two views. Original frame pixels and existing recognition markers are retained. Website motion moves whole image layers only. All previous product screenshots remain unchanged.
+
+## Looping recognition video
+
+`hero-recognition.mp4`: supplied MOV, original time range 9.2–16.0 seconds; 6.8 seconds at 720 × 1280, H.264/yuv420p, faststart, no audio stream. No crops, recoloring, replacement UI, or synthesized recognition were applied. `hero-recognition-poster.webp` is the excerpt at 0.3 seconds. Right phone remains `hero-plot-matched.webp`. The former matched-camera still is retained as a historical asset but is no longer shown in the hero.

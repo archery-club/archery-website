@@ -1,4 +1,4 @@
-# ArrowMind UI design v6 — selected palette A
+# ArrowMind UI design v7 — selected palette A with real recognition video
 
 ## Hard constraints
 
@@ -96,3 +96,7 @@ Background #F7F8FA; screenshot surfaces #E9EDF2; main text #171C24; secondary te
 Hero: same original 23-second film frame for camera detection and corresponding full phone plot (nine arrows, 80 points). Staggered image entrances, 6-second subtle layer floating, 3.8-second external flow marker, user Pause/Play control, offscreen suspension, reduced-motion support. Existing scroll reveals and feature transitions retained.
 
 Verification: TypeScript passed; local desktop/mobile loaded without overflow or browser console warnings/errors; pause/resume and analysis view switching tested. Server retained for requested user preview.
+
+## Current hero revision — real looping footage
+
+Supersedes the static-camera/floating treatment above. Left: original recognition film excerpt at 9.2–16.0s, complete 9:16 frame, silent autoplay loop. Right: unchanged original phone plot. No repeated floating on either side; entrance transition only. Explicit Pause/Play control, offscreen/background pause, reduced-motion opt-out with manual play.

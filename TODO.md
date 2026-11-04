@@ -94,3 +94,14 @@ Revision 5 validation: TypeScript passed. All seven chapters and all 18 subfeatu
 - [x] Verify locally on desktop/mobile and open the running site for the user.
 
 Palette A verification: TypeScript passed. HTTP 200; desktop and 390px mobile layouts opened. No horizontal overflow or console warnings/errors. All nine major product/global/download surfaces resolve to #E9EDF2; main action resolves to #2358D5. Original matched hero crops load. Pause sets image transform to none and flow animation to paused; resume works. Analysis view switching works. Current previews and design board updated. The local server is intentionally left running at http://127.0.0.1:3000 because the user requested an open, usable local preview.
+
+## Revision 7 — real recognition video and commits
+
+- [x] Commit existing redesign in four focused changes on codex/website-redesign.
+- [x] Extract and compress original recognition footage; preserve all source content.
+- [x] Replace left hero still with silent looping video and keep the right mock fixed.
+- [x] Add playback control, offscreen/background pause and reduced-motion support.
+- [x] Complete browser playback verification and prepare the independent video commit.
+- [x] Prepare branch codex/website-redesign for the user-authorized push to origin.
+
+Video verification: TypeScript, targeted ESLint and git diff whitespace checks passed. Browser autoplay is muted and inline; time advanced to 6.49s then wrapped to 3.93s while still playing, confirming the loop. Pause/Play works. Video pauses when the hero leaves view. At 390px, no horizontal overflow, video playing, right mock transform is none. Console had no warnings/errors. Local preview kept open. Push outcome is reported in the conversation and Git remote tracking state.

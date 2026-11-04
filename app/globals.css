@@ -824,11 +824,9 @@ section.feature-chapter { scroll-margin-top: 74px; border-bottom: 1px solid #E9E
 .hero-flow { grid-column: 1 / -1; display: flex; align-items: center; gap: 12px; padding: 16px 0 0; border-top: 1px solid var(--line); color: var(--muted); font: 9px var(--mono); letter-spacing: .4px; }
 .hero-flow > span:first-child, .hero-flow > span:last-child { flex: none; }
 .hero-flow-track { flex: 1; height: 1px; background: #B8C3D3; position: relative; }
-.hero-flow-track::after { content: ''; width: 6px; height: 6px; background: var(--accent); border-radius: 50%; position: absolute; top: -2.5px; left: 0; animation: detection-transfer 3.8s ease-in-out infinite; }
-.hero-real-stage[data-motion="paused"] .hero-flow-track::after { animation-play-state: paused; }
-@keyframes detection-transfer { 0%,12% { left: 0; opacity: 0; } 20% { opacity: 1; } 78% { opacity: 1; } 92%,100% { left: calc(100% - 6px); opacity: 0; } }
-.hero-motion-toggle { font-size: 10px; border: 1px solid var(--line); padding: 7px 10px; border-radius: 6px; color: var(--muted); min-height: 32px; }
-.hero-motion-toggle:hover { background: var(--soft); color: var(--accent); }
+.hero-flow-track::after { content: ''; width: 6px; height: 6px; background: var(--accent); border-radius: 50%; position: absolute; top: -2.5px; left: 0; left: calc(50% - 3px); }
+.hero-video-toggle { font-size: 10px; border: 1px solid var(--line); padding: 7px 10px; border-radius: 6px; color: var(--muted); min-height: 32px; }
+.hero-video-toggle:hover { background: var(--soft); color: var(--accent); }
 .hero-real-caption { flex-wrap: wrap; }
 .hero-real-caption a { margin-left: auto; }
 .feature-index { background: #F7F8FAFA; border-color: var(--line); }
@@ -860,9 +858,11 @@ section.feature-chapter { scroll-margin-top: 74px; border-bottom: 1px solid #E9E
   .hero-real-stage figcaption { font-size: 7px; letter-spacing: .1px; }
   .hero-flow { font-size: 7px; gap: 9px; }
   .hero-real-caption { gap: 8px; }
-  .hero-motion-toggle { font-size: 9px; }
+  .hero-video-toggle { font-size: 9px; }
 }
 @media (prefers-reduced-motion: reduce) {
   .hero-flow-track::after { animation: none; left: 50%; }
-  .hero-motion-toggle { display: none; }
 }
+
+/* Actual, silent recognition footage; retain the complete source frame. */
+.hero-recognition-video { display: block; width: 100%; height: auto; aspect-ratio: 9 / 16; object-fit: contain; border-radius: 13px; background: var(--panel); box-shadow: 0 12px 28px #171C2410; }
